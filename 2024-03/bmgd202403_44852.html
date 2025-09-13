@@ -1,0 +1,255 @@
+
+      <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		html,
+		body {
+			margin: 10px auto;
+			height: 100%;
+			background: #444;
+			text-align: center;
+			font-family: "Gotham Ssm A", "Gotham Ssm B", sans-serif;
+		}
+
+		.wrapper {
+			width: 980px;
+			margin: auto;
+			padding: 10px;
+		}
+
+		.frame {
+			margin: auto;
+			width: 980px;
+			height: 719px;
+			position: relative;
+			background: url(EnvelopeBackB.png);
+		}
+
+		.envelopecover {
+			width: 980px;
+			height: 719px;
+			margin: auto;
+			position: absolute;
+			background: url(EnvelopeFrontB.png);
+			z-index: 320;
+		}
+
+		.headerimage {
+			text-align: center;
+		}
+
+		.message {
+			display: none;
+			padding: 80px;
+			padding-top: 20px;
+			font-size: 15px;
+			line-height: 18px;
+			color: #424242;
+			text-align: left;
+			position: relative;
+			width: 700px;
+			height: 250px;
+			overflow: hidden;
+			background: #fff;
+			margin: 0 auto;
+			top: 200px;
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+			transition: 2s ease-in-out;
+			transition-delay: 1.5s;
+			z-index: 200;
+		}
+
+		.pull {
+			-webkit-animation: message_animation 2s 1 ease-in-out;
+			animation: message_animation 2s 1 ease-in-out;
+			-webkit-animation-delay: .8s;
+			animation-delay: .8s;
+			transition: 1.5s;
+			transition-delay: 1s;
+			z-index: 350;
+			height: 1000px;
+			transform: translatey(-150px);
+			margin-bottom: 40px;
+		}
+
+
+		@-webkit-keyframes message_animation {
+			0% {
+				opacity: 0;
+				transform: translatey(0px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			50% {
+				opacity: 1;
+				transform: translatey(-450px);
+				height: 250px;
+				z-index: 300;
+				transition: 1s ease-in-out;
+			}
+
+			51% {
+				transform: translatey(-450px);
+				height: 250px;
+				z-index: 350;
+				transition: 1s ease-in-out;
+			}
+
+			100% {
+				transform: translatey(-150px);
+				z-index: 350;
+				height: 1200px;
+				transition: 1s ease-in-out;
+			}
+		}
+
+		@keyframes message_animation {
+			0% {
+
+				transform: translatey(0px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			50% {
+				transform: translatey(-450px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			51% {
+				transform: translatey(-450px);
+				z-index: 350;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			100% {
+				transform: translatey(-150px);
+				z-index: 350;
+				height: 1200px;
+				transition: 1s ease-in-out;
+			}
+		}
+
+		button.yellow,
+		a.button.yellowbutton {
+			border: medium none;
+			border-radius: 3px;
+			font-weight: bold;
+			color: #FFFFFF;
+			padding: 10px;
+			text-decoration: none;
+			font-size: 20px;
+			background: #87212e;
+		}
+
+		button.yellow:hover,
+		a.button.yellowbutton:hover {
+			background: #87212e;
+		}
+	</style>
+
+	<title>Universidad del Norte A.C.</title>
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6257554/6190212/css/fonts.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.message').fadeIn(500).addClass('pull');
+		});
+	</script>
+	<style>
+		@media (max-width: 767px) {
+			.message p {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		<div class="frame">
+			<div class="envelopecover"></div>
+			<div class="message">
+				<p class="headerimage"><img src="../img/header.jpg" width=100%></p>
+
+				<p align="right"><i>17 de enero de 2025</i> </p>
+				<p>&nbsp;</p>
+
+				<p><b>
+
+
+						<!--  ********* AQUI SE ESCRIBE EL NOMBRE COMPLETO  DEL ESTUDIANTE *********  -->
+
+						Kenedy Yessenia Vazquez Urñeta
+
+
+
+
+						<br> Presente.-</b></p>
+				<p>&nbsp;</p>
+				<p>Estimado(a) <b>
+
+						<!--  ********* AQUI SE ESCRIBE SOLO EL NOMBRE SIN APELLIDOS DEL ESTUDIANTE *********  -->
+
+						Kenedy Yessenia
+
+
+
+
+						:</b></p>
+
+				<p align="justify">
+        El esfuerzo y la dedicación que en cada tarea que asumimos con compromiso rinden frutos extraordinarios. Tu sobresaliente promedio de 
+        <!--  ********* AQUI SE ESCRIBE EL PROMEDIO OBTENIDO POR EL ESTUDIANTE *********  -->
+        <b>9</b> 
+        alcanzado durante el pasado tetramestre,septiembre-diciembre 2024 es un reflejo claro del empeño y talento que pones en cada paso de tu formación académica.
+        </p>
+
+				<p align="justify">Eres un estudiante que entiende su educación como un desafío personal, un camino para demostrarte a ti misma y a quienes te rodean que los sueños se alcanzan con perseverancia en las pequeñas acciones cotidianas.</p>
+
+
+				<p align="justify">Tu logro merece ser celebrado, no solo por ti, sino también por tu familia, que ha sido un pilar esencial en tu vida, y por todos aquellos que han contribuido a forjar en ti un espíritu de metas elevadas. Tu Universidad desea felicitarte y reconocer el impacto positivo que jóvenes como tú tienen en la construcción de un futuro mejor para nuestra comunidad.</p>
+
+				<p align="justify">Te animo a seguir cultivando esa constancia que distingue a las personas que logran triunfar de manera íntegra y significativa.</p>
+
+				<center>
+
+					<table width=100%>
+						<tr>
+							<td width=40%> <br> </td>
+							<td width=60%>
+								<center>
+									<p style="margin-bottom: 0;"><img src="../img/firma_pchc.jpg"
+											alt="Ing. Pablo Chapa Cortez, M.A.N." style="width:120px;height:auto;"></p>
+									<p>Cordialmente,</p>
+									<p><b>Ing. Pablo Chapa Cortez, M.A.N.</b><br>
+										Director de Ingeniería y Tecnologías de Información<br>
+										<br>
+									</p>
+								</center>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</center>
+				<img src="../img/footer.jpg" width=100%>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+    
