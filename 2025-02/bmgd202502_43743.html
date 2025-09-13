@@ -1,0 +1,239 @@
+
+      <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		html,
+		body {
+			margin: 10px auto;
+			height: 100%;
+			background: #444;
+			text-align: center;
+			font-family: "Gotham Ssm A", "Gotham Ssm B", sans-serif;
+		}
+
+		.wrapper {
+			width: 980px;
+			margin: auto;
+			padding: 10px;
+		}
+
+		.frame {
+			margin: auto;
+			width: 980px;
+			height: 719px;
+			position: relative;
+			background: url(EnvelopeBackB.png);
+		}
+
+		.envelopecover {
+			width: 980px;
+			height: 719px;
+			margin: auto;
+			position: absolute;
+			background: url(EnvelopeFrontB.png);
+			z-index: 320;
+		}
+
+		.headerimage {
+			text-align: center;
+		}
+
+		.message {
+			display: none;
+			padding: 80px;
+			padding-top: 20px;
+			font-size: 15px;
+			line-height: 18px;
+			color: #424242;
+			text-align: left;
+			position: relative;
+			width: 700px;
+			height: 250px;
+			overflow: hidden;
+			background: #fff;
+			margin: 0 auto;
+			top: 200px;
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+			transition: 2s ease-in-out;
+			transition-delay: 1.5s;
+			z-index: 200;
+		}
+
+		.pull {
+			-webkit-animation: message_animation 2s 1 ease-in-out;
+			animation: message_animation 2s 1 ease-in-out;
+			-webkit-animation-delay: .8s;
+			animation-delay: .8s;
+			transition: 1.5s;
+			transition-delay: 1s;
+			z-index: 350;
+			height: 1000px;
+			transform: translatey(-150px);
+			margin-bottom: 40px;
+		}
+
+
+		@-webkit-keyframes message_animation {
+			0% {
+				opacity: 0;
+				transform: translatey(0px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			50% {
+				opacity: 1;
+				transform: translatey(-450px);
+				height: 250px;
+				z-index: 300;
+				transition: 1s ease-in-out;
+			}
+
+			51% {
+				transform: translatey(-450px);
+				height: 250px;
+				z-index: 350;
+				transition: 1s ease-in-out;
+			}
+
+			100% {
+				transform: translatey(-150px);
+				z-index: 350;
+				height: 1200px;
+				transition: 1s ease-in-out;
+			}
+		}
+
+		@keyframes message_animation {
+			0% {
+
+				transform: translatey(0px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			50% {
+				transform: translatey(-450px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			51% {
+				transform: translatey(-450px);
+				z-index: 350;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			100% {
+				transform: translatey(-150px);
+				z-index: 350;
+				height: 1200px;
+				transition: 1s ease-in-out;
+			}
+		}
+
+		button.yellow,
+		a.button.yellowbutton {
+			border: medium none;
+			border-radius: 3px;
+			font-weight: bold;
+			color: #FFFFFF;
+			padding: 10px;
+			text-decoration: none;
+			font-size: 20px;
+			background: #87212e;
+		}
+
+		button.yellow:hover,
+		a.button.yellowbutton:hover {
+			background: #87212e;
+		}
+	</style>
+
+	<title>Universidad del Norte A.C.</title>
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6257554/6190212/css/fonts.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.message').fadeIn(500).addClass('pull');
+		});
+	</script>
+	<style>
+		@media (max-width: 767px) {
+			.message p {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		<div class="frame">
+			<div class="envelopecover"></div>
+			<div class="message">
+				<p class="headerimage">
+          <img src="../img/header.jpg" width=100%>
+        </p>
+
+				<p align="right">
+          Mayo -Agosto 2025 <i>12 de septiembre de 2025</i>
+        </p>
+				<p>&nbsp; Apreciada ROSTRO JIMENEZ NATALIA CAROLINA </p>
+
+
+				<p align="justify">
+          El esfuerzo genuino y el compromiso constante siempre generan logros significativos. Tu promedio de <b>9.6</b> , alcanzado en el tetramestre Mayo–Agosto 2025, es una muestra clara de cómo tu dedicación y talento te están llevando a cumplir tus metas académicas.
+        </p>
+
+        <p align="justify">
+          Tu manera de asumir la educación como un desafío personal refleja no solo tu capacidad, sino también tu influencia positiva en quienes te rodean, demostrando que la constancia en los pequeños esfuerzos hace posible grandes sueños.
+        </p>
+
+        <p align="justify">
+          Felicitamos sinceramente tu logro, reconocemos a tu familia por ser un pilar esencial en tu desarrollo y agradecemos a todos quienes han contribuido en tu formación como una persona con ideales firmes y elevados. Tu Universidad celebra contigo este éxito y reafirma su convicción de que jóvenes con tu visión y actitud son la base de un futuro prometedor.
+        </p>
+
+        <p align="justify">
+          Te animamos a continuar con la perseverancia que distingue a quienes alcanzan triunfos auténticos e integrales.
+        </p>
+
+				<center>
+					<table width=100%>
+						<tr>
+							<td width=40%> <br> </td>
+							<td width=60%>
+								<center>
+									<p style="margin-bottom: 0;"><img src="../img/firma_ncv.jpg"
+											alt="Lic. Nidia Ceballos Vela, M.E.U." style="width:120px;height:auto;"></p>
+									<p>Cordialmente,</p>
+									<p><b>Lic. Nidia Ceballos Vela, M.E.U.</b><br>
+										Directora de Ciencias Jurídicas<br>
+										<br>
+									</p>
+								</center>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</center>
+
+				<img src="../img/footer.jpg" width=100%>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+    
