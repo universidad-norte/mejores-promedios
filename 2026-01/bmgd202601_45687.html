@@ -1,0 +1,245 @@
+
+      <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		html,
+		body {
+			margin: 10px auto;
+			height: 100%;
+			background: #444;
+			text-align: center;
+			font-family: "Gotham Ssm A", "Gotham Ssm B", sans-serif;
+		}
+
+		.wrapper {
+			width: 980px;
+			margin: auto;
+			padding: 10px;
+		}
+
+		.frame {
+			margin: auto;
+			width: 980px;
+			height: 719px;
+			position: relative;
+			background: url(../img/EnvelopeBackB.png);
+		}
+
+		.envelopecover {
+			width: 980px;
+			height: 719px;
+			margin: auto;
+			position: absolute;
+			background: url(../img/EnvelopeFrontB.png);
+			z-index: 320;
+		}
+
+		.headerimage {
+			text-align: center;
+		}
+
+		.message {
+			display: none;
+			padding: 80px;
+			padding-top: 20px;
+			font-size: 15px;
+			line-height: 18px;
+			color: #424242;
+			text-align: left;
+			position: relative;
+			width: 700px;
+			height: 250px;
+			overflow: hidden;
+			background: #fff;
+			margin: 0 auto;
+			top: 200px;
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+			transition: 2s ease-in-out;
+			transition-delay: 1.5s;
+			z-index: 200;
+		}
+
+		.pull {
+			-webkit-animation: message_animation 2s 1 ease-in-out;
+			animation: message_animation 2s 1 ease-in-out;
+			-webkit-animation-delay: .8s;
+			animation-delay: .8s;
+			transition: 1.5s;
+			transition-delay: 1s;
+			z-index: 350;
+			height: 1000px;
+			transform: translatey(-150px);
+			margin-bottom: 40px;
+		}
+
+
+		@-webkit-keyframes message_animation {
+			0% {
+				opacity: 0;
+				transform: translatey(0px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			50% {
+				opacity: 1;
+				transform: translatey(-450px);
+				height: 250px;
+				z-index: 300;
+				transition: 1s ease-in-out;
+			}
+
+			51% {
+				transform: translatey(-450px);
+				height: 250px;
+				z-index: 350;
+				transition: 1s ease-in-out;
+			}
+
+			100% {
+				transform: translatey(-150px);
+				z-index: 350;
+				height: 1200px;
+				transition: 1s ease-in-out;
+			}
+		}
+
+		@keyframes message_animation {
+			0% {
+
+				transform: translatey(0px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			50% {
+				transform: translatey(-450px);
+				z-index: 300;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			51% {
+				transform: translatey(-450px);
+				z-index: 350;
+				height: 250px;
+				transition: 1s ease-in-out;
+			}
+
+			100% {
+				transform: translatey(-150px);
+				z-index: 350;
+				height: 1200px;
+				transition: 1s ease-in-out;
+			}
+		}
+
+		button.yellow,
+		a.button.yellowbutton {
+			border: medium none;
+			border-radius: 3px;
+			font-weight: bold;
+			color: #FFFFFF;
+			padding: 10px;
+			text-decoration: none;
+			font-size: 20px;
+			background: #87212e;
+		}
+
+		button.yellow:hover,
+		a.button.yellowbutton:hover {
+			background: #87212e;
+		}
+	</style>
+
+	<title>Universidad del Norte A.C.</title>
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6257554/6190212/css/fonts.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.message').fadeIn(500).addClass('pull');
+		});
+	</script>
+	<style>
+		@media (max-width: 767px) {
+			.message p {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		<div class="frame">
+			<div class="envelopecover"></div>
+			<div class="message">
+				<p class="headerimage">
+          <img src="../img/header.jpg" width=100%>
+        </p>
+
+				<p align="right"><i>24 de abril de 2026</i></p>
+				<p>&nbsp;</p>
+
+				<p><b>AGUILAR CAMPOS ALMA DELIA
+				<br> Presente.-</b></p>
+				<p>&nbsp;</p>
+        <p>Estimado(a) <b>ALMA DELIA</b>
+
+				<p align="justify">
+          El ser humano que aspira a la excelencia entiende que cada esfuerzo cotidiano es una oportunidad para superarse y construir un futuro lleno de logros. La constancia, la disciplina y la claridad de objetivos son cualidades que distinguen a quienes, como tú, deciden dar siempre lo mejor de sí.
+        </p>
+
+        <p align="justify">
+          Tu universidad se enorgullece en felicitarte y reconocerte por haber obtenido un destacado promedio de 9 durante el tetramestre Ene - Abr 2026. Este resultado es reflejo de tu compromiso académico y de la dedicación que has demostrado en cada una de tus actividades.
+        </p>
+
+        <p align="justify">
+          Tu desempeño te convierte en un referente para nuestra comunidad universitaria, motivando a otros estudiantes a seguir el camino del esfuerzo y la superación. Jóvenes como tú fortalecen nuestro compromiso de brindar una educación de calidad, centrada en la formación integral de nuestros estudiantes.
+        </p>
+
+        <p align="justify">
+          Reconocemos también que este logro no es individual. En él se encuentra el apoyo de tu familia, amigos y seres cercanos, quienes han contribuido a forjar en ti valores sólidos y una actitud perseverante. A todos ellos, les extendemos nuestro reconocimiento y te pedimos que hagas llegar estas felicitaciones.
+        </p>
+
+        <p align="justify">
+          Te exhortamos a continuar con este camino de éxito, estableciendo metas cada vez más altas y desafiantes. Que este logro sea un paso más hacia la realización de tus sueños.
+        </p>
+
+				<center>
+					<table width=100%>
+						<tr>
+							<td width=40%> <br> </td>
+							<td width=60%>
+								<center>
+									<p style="margin-bottom: 0;"><img src="../img/firma_pchc.jpg"
+											alt="Ing. Pablo Chapa Cortez, M.A.N." style="width:120px;height:auto;"></p>
+									<p>Cordialmente,</p>
+									<p><b>Ing. Pablo Chapa Cortez, M.A.N.</b><br>
+										Director de Ingeniería y Tecnologías de Información<br>
+										<br>
+									</p>
+								</center>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</center>
+
+				<img src="../img/footer.jpg" width=100%>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+    
