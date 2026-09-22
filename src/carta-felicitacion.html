@@ -1,0 +1,97 @@
+<title>Sobre de Felicitación</title>
+<meta name="description" content="Carta de felicitación académica que se abre desde un sobre interactivo y se puede descargar en PDF.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<link rel="stylesheet" href="carta-felicitacion.css">
+
+<div class="page">
+
+  <div class="intro">
+    <div class="eyebrow">
+      <img src="img/logo_un.png" alt="Logo de la Universidad del Norte" />
+      <span>Reconocimiento académico</span>
+    </div>
+    <h1>Una carta de felicitación te espera</h1>
+    <p>Toca el sobre para abrirlo.</p>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="stage-frame" id="stageFrame" role="button" tabindex="0" aria-expanded="false" aria-label="Abrir el sobre para leer la carta">
+      <img class="env-img env-back" src="img/EnvelopeBackB.png" alt="Parte trasera del sobre" />
+
+      <div class="letter-slot">
+        <div class="letter-card" id="letterCard">
+          <div class="letter-scroll" id="letterContent">
+            <img class="header-img" src="img/header.jpg" alt="Encabezado de la carta" />
+
+            <p class="letter-date"><i>10 de junio del 2024</i></p>
+
+            <!-- AQUI SE ESCRIBE EL NOMBRE COMPLETO DEL ESTUDIANTE -->
+            <p class="addressee">Alfredo Giovanni Esquivel García<br>Presente.–</p>
+
+            <!-- AQUI SE ESCRIBE SOLO EL NOMBRE SIN APELLIDOS DEL ESTUDIANTE -->
+            <p>Estimado <b>Alfredo Giovanni</b>:</p>
+
+            <p>Cada esfuerzo merece ser reconocido, y es con gran satisfacción que te escribo para felicitarte por tu sobresaliente desempeño académico. Tu dedicación, esfuerzo y compromiso se han visto reflejados en el excelente promedio de
+              <!-- AQUI SE ESCRIBE EL PROMEDIO OBTENIDO POR EL ESTUDIANTE -->
+              <b>9.00</b>
+              que has obtenido durante el tetramestre enero-abril 2024.</p>
+
+            <p>Estamos convencidos de que estudiantes como tú, con una actitud ejemplar hacia el estudio y el aprendizaje, son los que marcan la diferencia y contribuyen significativamente al prestigio de nuestra institución.</p>
+
+            <p>Además, quiero reconocer y valorar el importante papel que ha jugado tu familia en este logro. La colaboración familiar es un pilar esencial en el camino hacia el éxito, y estoy seguro de que su respaldo continuará siendo una fuente de fortaleza e inspiración para ti.</p>
+
+            <p>Te invito a seguir manteniendo este nivel de excelencia académica y a continuar desarrollando tus habilidades y conocimientos.</p>
+
+            <p>Estoy seguro de que tu futuro profesional será brillante y lleno de éxitos, gracias a tu perseverancia y dedicación.</p>
+
+            <p>Recibe esta carta como un reconocimiento formal a tu esfuerzo y un estímulo para que sigas adelante con la misma motivación y entusiasmo.</p>
+
+            <div class="sign-block">
+              <img class="sign-img" src="img/signature.png" alt="Firma del Sub director de Ingeniería y Tecnologías de Información" />
+              <p>Cordialmente,</p>
+              <p><b>Ing. Pablo Chapa Cortez, M.A.N.</b></p>
+              <p>Sub director de Ingeniería y Tecnologías de Información</p>
+            </div>
+
+            <img class="footer-img" src="img/footer.jpg" alt="Pie de página de la carta" />
+          </div>
+        </div>
+      </div>
+
+      <img class="env-img env-front" src="img/EnvelopeFrontB.png" alt="Parte frontal del sobre" />
+
+      <div class="hint" id="hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m6 10 6 6 6-6"/><path d="M5 20h14"/></svg>
+        Toca para abrir tu carta
+      </div>
+    </div>
+  </div>
+
+  <div class="actions" id="actions">
+    <button class="btn btn-primary" id="downloadBtn" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Descargar carta en PDF
+    </button>
+    <button class="btn btn-ghost" id="closeBtn" type="button">Cerrar el sobre</button>
+  </div>
+  <p class="status" id="status" aria-live="polite"></p>
+
+  <div class="notes">
+    <h2>Nota para quien edite esta plantilla</h2>
+    <ul>
+      <li>El nombre, promedio y tetramestre se editan directamente en el texto de la carta (donde estaban los comentarios en el archivo original).</li>
+      <li>El efecto de apertura ahora usa una transición CSS disparada por clic, en vez del temporizador fijo con jQuery del archivo original — ver explicación en el chat.</li>
+      <li>El botón de PDF captura únicamente el contenido de la carta, no el sobre, y conserva las imágenes de encabezado, pie y firma.</li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="carta-felicitacion.js"></script>
