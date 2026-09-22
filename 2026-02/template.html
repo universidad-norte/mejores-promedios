@@ -38,20 +38,15 @@
             <!-- AQUI SE ESCRIBE SOLO EL NOMBRE SIN APELLIDOS DEL ESTUDIANTE -->
             <p>Estimado <b>${nombre}</b>:</p>
 
-            <p>Cada esfuerzo merece ser reconocido, y es con gran satisfacción que te escribo para felicitarte por tu sobresaliente desempeño académico. Tu dedicación, esfuerzo y compromiso se han visto reflejados en el excelente promedio de
-              <!-- AQUI SE ESCRIBE EL PROMEDIO OBTENIDO POR EL ESTUDIANTE -->
-              <b>${promedio}</b>
-              que has obtenido durante el tetramestre enero-abril 2024.</p>
+            <p>El ser humano que aspira a la excelencia entiende que cada esfuerzo cotidiano es una oportunidad para superarse y construir un futuro lleno de logros. La constancia, la disciplina y la claridad de objetivos son cualidades que distinguen a quienes, como tú, deciden dar siempre lo mejor de sí.</p>
 
-            <p>Estamos convencidos de que estudiantes como tú, con una actitud ejemplar hacia el estudio y el aprendizaje, son los que marcan la diferencia y contribuyen significativamente al prestigio de nuestra institución.</p>
+            <p>Tu universidad se enorgullece en felicitarte y reconocerte por haber obtenido un destacado promedio de ${promedio} durante el tetramestre ${tetramestre}. Este resultado es reflejo de tu compromiso académico y de la dedicación que has demostrado en cada una de tus actividades.</p>
 
-            <p>Además, quiero reconocer y valorar el importante papel que ha jugado tu familia en este logro. La colaboración familiar es un pilar esencial en el camino hacia el éxito, y estoy seguro de que su respaldo continuará siendo una fuente de fortaleza e inspiración para ti.</p>
+            <p>Tu desempeño te convierte en un referente para nuestra comunidad universitaria, motivando a otros estudiantes a seguir el camino del esfuerzo y la superación. Jóvenes como tú fortalecen nuestro compromiso de brindar una educación de calidad, centrada en la formación integral de nuestros estudiantes.</p>
 
-            <p>Te invito a seguir manteniendo este nivel de excelencia académica y a continuar desarrollando tus habilidades y conocimientos.</p>
+            <p>Reconocemos también que este logro no es individual. En él se encuentra el apoyo de tu familia, amigos y seres cercanos, quienes han contribuido a forjar en ti valores sólidos y una actitud perseverante. A todos ellos, les extendemos nuestro reconocimiento y te pedimos que hagas llegar estas felicitaciones.</p>
 
-            <p>Estoy seguro de que tu futuro profesional será brillante y lleno de éxitos, gracias a tu perseverancia y dedicación.</p>
-
-            <p>Recibe esta carta como un reconocimiento formal a tu esfuerzo y un estímulo para que sigas adelante con la misma motivación y entusiasmo.</p>
+            <p>Te exhortamos a continuar con este camino de éxito, estableciendo metas cada vez más altas y desafiantes. Que este logro sea un paso más hacia la realización de tus sueños.</p>
 
             <div class="sign-block">
               <img class="sign-img" src="../img/${firma}" alt="${director}" />
@@ -82,16 +77,6 @@
     <button class="btn btn-ghost" id="closeBtn" type="button">Cerrar el sobre</button>
   </div>
   <p class="status" id="status" aria-live="polite"></p>
-
-  <div class="notes">
-    <h2>Nota para quien edite esta plantilla</h2>
-    <ul>
-      <li>El nombre, promedio y tetramestre se editan directamente en el texto de la carta (donde estaban los comentarios en el archivo original).</li>
-      <li>El efecto de apertura ahora usa una transición CSS disparada por clic, en vez del temporizador fijo con jQuery del archivo original — ver explicación en el chat.</li>
-      <li>El botón de PDF captura únicamente el contenido de la carta, no el sobre, y conserva las imágenes de encabezado, pie y firma.</li>
-    </ul>
-  </div>
-
 </div>
 
 <script src="../src/carta-felicitacion.js"></script>

@@ -1,0 +1,84 @@
+
+      <title>Sobre de Felicitación</title>
+      <meta name="description" content="Carta de felicitación académica que se abre desde un sobre interactivo y se puede descargar en PDF.">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+      <link rel="stylesheet" href="../src/carta-felicitacion.css">
+
+      <div class="page">
+
+        <div class="intro">
+          <div class="eyebrow">
+            <img src="../img/logo_un.png" alt="Logo de la Universidad del Norte" />
+            <span>Reconocimiento académico</span>
+          </div>
+          <h1>Una carta de felicitación te espera</h1>
+          <p>Toca el sobre para abrirlo.</p>
+        </div>
+
+        <div class="stage" id="stage">
+          <div class="stage-frame" id="stageFrame" role="button" tabindex="0" aria-expanded="false" aria-label="Abrir el sobre para leer la carta">
+            <img class="env-img env-back" src="../img/EnvelopeBackB.png" alt="Parte trasera del sobre" />
+
+            <div class="letter-slot">
+              <div class="letter-card" id="letterCard">
+                <div class="letter-scroll" id="letterContent">
+                  <img class="header-img" src="../img/header.jpg" alt="Encabezado de la carta" />
+
+                  <p class="letter-date"><i>22 de septiembre de 2026</i></p>
+
+                  <!-- AQUI SE ESCRIBE EL NOMBRE COMPLETO DEL ESTUDIANTE -->
+                  <p class="addressee">RAMIREZ CRUZ YAHAIRA YAZMIN<br>Presente.–</p>
+
+                  <!-- AQUI SE ESCRIBE SOLO EL NOMBRE SIN APELLIDOS DEL ESTUDIANTE -->
+                  <p>Estimado <b>YAHAIRA YAZMIN</b>:</p>
+
+                  <p>El ser humano que aspira a la excelencia entiende que cada esfuerzo cotidiano es una oportunidad para superarse y construir un futuro lleno de logros. La constancia, la disciplina y la claridad de objetivos son cualidades que distinguen a quienes, como tú, deciden dar siempre lo mejor de sí.</p>
+
+                  <p>Tu universidad se enorgullece en felicitarte y reconocerte por haber obtenido un destacado promedio de 9.17 durante el tetramestre May - Ago 2026. Este resultado es reflejo de tu compromiso académico y de la dedicación que has demostrado en cada una de tus actividades.</p>
+
+                  <p>Tu desempeño te convierte en un referente para nuestra comunidad universitaria, motivando a otros estudiantes a seguir el camino del esfuerzo y la superación. Jóvenes como tú fortalecen nuestro compromiso de brindar una educación de calidad, centrada en la formación integral de nuestros estudiantes.</p>
+
+                  <p>Reconocemos también que este logro no es individual. En él se encuentra el apoyo de tu familia, amigos y seres cercanos, quienes han contribuido a forjar en ti valores sólidos y una actitud perseverante. A todos ellos, les extendemos nuestro reconocimiento y te pedimos que hagas llegar estas felicitaciones.</p>
+
+                  <p>Te exhortamos a continuar con este camino de éxito, estableciendo metas cada vez más altas y desafiantes. Que este logro sea un paso más hacia la realización de tus sueños.</p>
+
+                  <div class="sign-block">
+                    <img class="sign-img" src="../img/firma_marc.jpg" alt="Lic. Martín A. Rodríguez Canales, M.E.U." />
+                    <p>Cordialmente,</p>
+                    <p><b>Lic. Martín A. Rodríguez Canales, M.E.U.</b></p>
+                    <p>Director de Humanidades y Ciencias Sociales</p>
+                  </div>
+
+                  <img class="footer-img" src="../img/footer.jpg" alt="Pie de página de la carta" />
+                </div>
+              </div>
+            </div>
+
+            <img class="env-img env-front" src="../img/EnvelopeFrontB.png" alt="Parte frontal del sobre" />
+
+            <div class="hint" id="hint">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m6 10 6 6 6-6"/><path d="M5 20h14"/></svg>
+              Toca para abrir tu carta
+            </div>
+          </div>
+        </div>
+
+        <div class="actions" id="actions">
+          <button class="btn btn-primary" id="downloadBtn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Descargar carta en PDF
+          </button>
+          <button class="btn btn-ghost" id="closeBtn" type="button">Cerrar el sobre</button>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+      </div>
+
+      <script src="../src/carta-felicitacion.js"></script>
+    
